@@ -4,18 +4,87 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>Our Vineyard</title>
 		<style type="text/css">
-		/*	table, 
-			th, 
-			td {
-   				border: 1px solid black;
-   				background-color: #b2a16e;
-			}*/
+
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			@media only screen and (max-width: 660px) {
+				table.container {width: 480px !important;}
+				td.logo img {display: none;}
+				td.logo {background: #fff url(images/logo_medium.gif) no-repeat 10px 10px; height: 45px;}
+
+				td.headline {padding: 5px 0 0 30px !important;}
+				td.headline h1 {font-size: 28px !important;}
+
+				td.banner img {display: none;}
+				td.banner {width: 480px; height: 150px; background: url(images/banner_medium.jpg) no-repeat 0 0;}
+
+				td.content {padding-bottom: 30px !important; background-image: url(images/banner_medium_ghost.jpg) !important;}
+				td.content table.button{width: auto;}
+				td.content table.button td a {font-size: 14px !important;}
+
+				td.promos table {width: 200px !important;}
+				td.promos table td h3 {margin-bottom: 8px;}
+				td.promos table td img {display: none;}
+				td.promos table.promo_1 td {background: url(images/promo_1_medium.jpg) no-repeat 0 0; padding: 100px 0 0 0;}
+				td.promos table.promo_2 td {background: url(images/promo_2_medium.jpg) no-repeat 0 0; padding: 100px 0 0 0;}
+
+
+				td.callout table {width: 50% !important; margin-bottom: 40px;}
+				td.callout table img {display: none;}
+				td.callout table br {display: none;}
+				td.callout table a {display: block; margin-top: 10px;}
+				td.callout table td {background-size: 65px 65px;}
+
+
+
+
+				td.callout table.callout_1 td {padding: 0 30px 0 60px !important; background: url(images/icon_grapes.gif) no-repeat 0 -13px;}
+				td.callout table.callout_2 td {padding: 0 20px 0 60px !important; background: url(images/icon_bottle.gif) no-repeat 10px -3px;}
+				td.callout table.callout_3 td {padding: 0 30px 0 60px !important; background: url(images/icon_basket.gif) no-repeat 0 -13px; clear: left;}
+				td.callout table.callout_4 td {padding: 0 20px 0 60px !important; background: url(images/icon_grapes.gif) no-repeat 10px -23px;}
+			}
+
+			@media only screen and (max-width: 510px) {
+				table.container {width: 100% !important;}
+				table.container td {border: none !important;}
+				td.logo {background: #fff url(images/logo_small.gif) no-repeat center 10px; height: 32px;}
+
+				td.headline h1 {font-size: 24px !important; text-align: center;}
+
+				td.banner {height: 115px; background: url(images/banner_small.jpg) no-repeat right 0;}
+
+				td.content {line-height: 20px !important; padding-bottom: 10px !important; background: #f5f2e5 url(images/banner_small_ghost.jpg) no-repeat right 0 !important;}
+				td.footer {padding: 20px 30px !important;}
+
+
+				td.promos table.promo_1 {width: 100% !important; border-top: 1px solid #71a412;}
+				td.promos table.promo_1 td {background: url(images/promo_1_small.jpg) no-repeat 0 40px;padding: 20px 0 40px 110px;}
+				td.promos table.promo_2 {width: 100% !important; border-top: 1px solid #71a412;}
+				td.promos table.promo_2 td {background: url(images/promo_2_small.jpg) no-repeat 0 40px;padding: 20px 0 0 110px; clear: left;}
+
+				td.callout{padding: 20px 30px 0 30px !important;}
+				td.callout table {width: 100% !important; margin-bottom: 20px;}
+				td.callout table td {padding: 0 0 10px 50px !important; background-size: 50px 50px !important; min-height: 60px;}
+				td.callout table a {display: inline;}
+				td.callout table.callout_1 td {background-position: 0 -6px;}
+				td.callout table.callout_2 td {background-position: 4px -2px;}
+				td.callout table.callout_3 td {background-position: 0 -7px;}
+				td.callout table.callout_4 td {background-position: 4px -17px;}
+
+				td.callout table br.spacer {display: inline;}
+			}
 
 		
 
 		</style>
 	</head>	
-	<body>
+	<body background="#efe1b0">
+		<div style="font-size: 1px; color: #efe1b0; display: none;">
+			Place preview messge here. This will show in the inbox. Make sure it's long enought o fill the space.
+		</div>
 
 		<table class="main" width="100%" border="0" cellspacing="0" cellpadding="0">
 			<tr>
@@ -89,7 +158,7 @@
 									<td valign="top" width="135" style="padding-left: 10px; padding-right: 10px; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height: 16px; color: #ffffff;">
 										<img src="images/icon_grapes.gif" width="75" height="75"><br>
 										Lorem ipsum dolor sit amet conctetur adipi eiu smod incid amet idun.
-										<br><br>
+										<br><br class="spacer">
 										<a href="#" style="color: #efe1b0">Learn more</a>
 									</td>
 								</tr>
@@ -99,7 +168,7 @@
 									<td valign="top" width="135" style="padding-left: 10px; padding-right: 10px; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height: 16px; color: #ffffff;">
 										<img src="images/icon_bottle.gif" width="75" height="75"><br>
 										Ddolore eu fugiat nulla pariatur cupi datat excepteur occaet cupi noin.
-										<br><br>
+										<br><br class="spacer">
 										<a href="#" style="color: #efe1b0">Learn more</a>
 									</td>
 								</tr>
@@ -109,7 +178,7 @@
 									<td valign="top" width="135" style="padding-left: 10px; padding-right: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 16px; color: #ffffff;">
 										<img src="images/icon_basket.gif" width="75" height="75"><br>
 										Eiusmod tempor inci didunt ut magna aliqua ut enim ad iam quis.
-										<br><br>
+										<br><br class="spacer">
 										<a href="#" style="color: #efe1b0">Learn more</a>
 									</td>
 								</tr>
@@ -120,7 +189,7 @@
 									<td valign="top" width="135" style="padding-left: 10px; padding-right: 10px; font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 16px; color: #ffffff;">
 										<img src="images/icon_camera.gif" width="75" height="75"><br>
 										Excepteur sint occaecat cupidatat non proident sunt in culpa qui molit.
-										<br><br>
+										<br><br class="spacer">
 										<a href="#" style="color: #efe1b0">Learn more</a>
 									</td>
 								</tr>
